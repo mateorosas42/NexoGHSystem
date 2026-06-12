@@ -1,0 +1,52 @@
+#backLogin{
+    -fx-background-color: #2c3e50;
+}
+#loginForm{
+    -fx-border-radius: 6px;
+    -fx-background-radius: 8px;
+    -fx-background-color: #14273a;
+    -fx-border-color: #755916;
+    -fx-border-width: 3px;
+    -fx-opacity: 80%;
+}
+.textLogin{
+    -fx-background-color: #14273a;
+    -fx-background-radius: 16px;
+    -fx-border-color: #755916;
+    -fx-border-width: 3px;
+    -fx-border-radius: 16px;
+    -fx-padding: 8px 10px;
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill: #755916;
+}
+.textLogin:hover{
+    -fx-background-color: #4d6c85;
+    -fx-background-radius: 16px;
+    -fx-border-color: #755916;
+    -fx-border-width: 3px;
+    -fx-opacity: 80%;
+}
+.buttonLogin{
+    -fx-background-color: #95701b;
+    -fx-background-radius: 16px;
+    -fx-border-color: #95701b;
+    -fx-border-width: 3px;
+    -fx-opacity: 80%;
+    -fx-border-radius: 16px;
+    -fx-padding: 8px 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #14273a;
+}
+.buttonLogin:hover{
+    -fx-background-color: #95701b;
+    -fx-background-radius: 17px;
+    -fx-border-color: #755916;
+    -fx-border-width: 4px;
+    -fx-opacity: 80%;
+}
+.labelLogin{
+    -fx-text-fill: #95701b;
+    -fx-font-family: "CMU Bright";
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
