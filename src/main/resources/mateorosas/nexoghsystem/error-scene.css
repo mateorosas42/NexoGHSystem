@@ -1,0 +1,72 @@
+.error-root {
+    -fx-background-color: #F8F7F5;
+    -fx-padding: 40px;
+}
+
+.error-card {
+    -fx-background-color: white;
+    -fx-background-radius: 14px;
+    -fx-border-color: #E0DED8;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 14px;
+    -fx-padding: 48px 40px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 16, 0, 0, 4);
+}
+
+.error-icon-circle {
+    -fx-fill: #FCEBEB;
+}
+
+.error-icon-label {
+    -fx-font-size: 26px;
+    -fx-text-fill: #A32D2D;
+}
+
+.error-category {
+    -fx-font-size: 11px;
+    -fx-text-fill: #888780;
+    -fx-letter-spacing: 0.1em;
+}
+
+.error-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #2C2C2A;
+}
+
+.error-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: #5F5E5A;
+    -fx-line-spacing: 4px;
+}
+
+.error-btn-retry {
+    -fx-background-color: white;
+    -fx-border-color: #B4B2A9;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 20px;
+    -fx-cursor: hand;
+}
+
+.error-btn-retry:hover {
+    -fx-background-color: #F1EFE8;
+}
+
+.error-btn-close {
+    -fx-background-color: #FCEBEB;
+    -fx-border-color: #F7C1C1;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #A32D2D;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 20px;
+    -fx-cursor: hand;
+}
+
+.error-btn-close:hover {
+    -fx-background-color: #F7C1C1;
+}

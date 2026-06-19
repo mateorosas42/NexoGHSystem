@@ -1,0 +1,67 @@
+/* ==========================================
+   ESTILO PARA EL SCROLL PANE Y SUS BARRAS
+   ========================================== */
+
+/* 1. Contenedor principal y fondo */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* El viewport es el área visible donde se renderiza el contenido */
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* 2. La barra en general (Vertical y Horizontal) */
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent; /* Fondo transparente */
+    -fx-background-radius: 0;
+}
+
+/* Ajustamos el ancho de la vertical y el alto de la horizontal (Más delgadas) */
+.scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 8px;
+    -fx-padding: 0 1px 0 1px;
+}
+.scroll-pane .scroll-bar:horizontal {
+    -fx-pref-height: 8px;
+    -fx-padding: 1px 0 1px 0;
+}
+
+/* 3. El "Track" (El camino gris por donde corre la barra) */
+.scroll-pane .scroll-bar .track {
+    -fx-background-color: transparent; /* Lo hacemos invisible para más elegancia */
+    -fx-background-radius: 0;
+}
+
+/* 4. El "Thumb" (La barrita arrastrable que se mueve) */
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #ced4da; /* Gris claro sutil */
+    -fx-background-radius: 6px;    /* Completamente redondeada */
+}
+
+/* Efecto cuando el usuario pasa el mouse sobre la barrita */
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #a4b0be; /* Se oscurece un poco para indicar interacción */
+}
+
+/* Efecto cuando el usuario está arrastrando la barrita */
+.scroll-pane .scroll-bar .thumb:pressed {
+    -fx-background-color: #747d8c;
+}
+
+/* 5. ELIMINAR LAS FLECHAS (Increment/Decrement Buttons)
+   Los botones con flechas en los extremos ya no se usan en UI moderna. */
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+    -fx-shape: " "; /* Truco: vaciamos la forma geométrica de la flecha */
+    -fx-padding: 0;
+}
